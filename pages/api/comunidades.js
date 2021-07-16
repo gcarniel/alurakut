@@ -9,9 +9,6 @@ export default async function recebedorDeRequest(request, response) {
         const registroCriado = await client.items.create({
             itemType: "967135",
             ...request.body,
-            // title: "comunidade teste",
-            // imageUrl: "https://cdn.pixabay.com/photo/2012/11/21/17/02/lion-66898_960_720.jpg",
-            // creatorSlug: "gcarniel"
         })
 
         response.json({
